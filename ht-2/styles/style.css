@@ -1,0 +1,22 @@
+.block1 {
+    background: #2f2f2f;
+}
+#s1 {
+    color: #ffffff;
+}
+#s2 {
+    color: #c19be4;
+}
+.red-block {
+    background: #ff0000;
+    width: 100px;
+    height: 100px;
+}
+.block2 {
+    background: #ce99ff;
+    width: 300px;
+}
+#s3 {
+    color: #ffffff;
+    background: #563575;
+}
