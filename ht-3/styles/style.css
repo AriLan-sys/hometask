@@ -1,0 +1,23 @@
+header {
+    height: 60px;
+    background: #ffbf0fe4;
+
+    a {
+        color: #000;
+    }
+}
+
+.block {
+    background: #ffd99bd3;
+}
+
+footer {
+    background: #6a06ac;
+    height: 300px;
+
+    h4,
+    li,
+    a {
+        color: #ffffff;
+    }
+}
