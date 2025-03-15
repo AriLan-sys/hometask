@@ -9,6 +9,7 @@
     height: 600px;
     border: 1px solid #000000;
     background: #b88ab82e;
+    max-width: 1200px;
 }
 
 .block {
