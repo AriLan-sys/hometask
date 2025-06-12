@@ -1,0 +1,40 @@
+body {
+    background-color: #2c2c2c;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.title {
+    font-size: 5rem;
+    position: relative;
+}
+
+.title::before,
+.title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #fff;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+}
+
+.title::before {
+    background-color: #f85858;
+    left: -150px;
+    top: -10px;
+}
+
+.title::after {
+    background-color: #7cb3fa;
+    right: -150px;
+    top: -10px;
+}
