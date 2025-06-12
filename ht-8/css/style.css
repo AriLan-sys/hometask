@@ -1,0 +1,27 @@
+body {
+    background: #262628;
+    color: #fff;
+    font-size: 2rem;
+}
+
+/* ====================================== */
+
+.block {
+    position: fixed;
+    background-color: #fff;
+    border-radius: 5px;
+    min-height: 100px;
+    bottom: 100px;
+    left: 50%;
+    right: 50px;
+}
+
+.block__circle {
+    position: relative;
+    background-color: #ff0000;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    left: 20%;
+    bottom: 50px;
+}
