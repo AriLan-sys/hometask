@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Task №16 | lesson 101</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="conteiner">
+        <h1>Ответы на вопросы к уроку 101</h1>
+        <a class="button" href="../index.html">МЕНЮ</a>
+        <div class="lesson">
+
+            <h2>Вопрос 1</h2>
+            <div class="lesson__answer">
+                Создание функции, которая в качестве аргумента принимает имя, а возвращает строку ‘Hello
+                “аргумент функции”’.
+                <pre><code><span class="lesson__answer-js">1</span>    function greetingsUser (nameUser) { 
+<span class="lesson__answer-js">2</span>        return 'Hello ' + nameUser
+<span class="lesson__answer-js">3</span>    }
+<span class="lesson__answer-js">4</span>
+<span class="lesson__answer-js">5</span>    let nameUser = prompt(`Введите ваше имя :)\nПосле чего посмотрите в консоль`)
+<span class="lesson__answer-js">6</span>    console.log(greetingsUser(nameUser))</code></pre>
+                Результат выполнения блока кода можно увидеть в консоли.
+                <a class="button" href="lesson101-1.html">Результат</a>
+            </div>
+
+
+
+            <h2>Вопрос 2</h2>
+            <div class="lesson__answer">
+                Создание массива чисел, создание функции, которая принимаем в качестве аргумента массив
+                чисел. Она перебирает полученный массив и если число больше 10 - выводит это число в
+                консоль.
+                <pre><code><span class="lesson__answer-js">1</span>    function searchForNumbersGreaterThanTen(array) {
+<span class="lesson__answer-js">2</span>        let result = ''
+<span class="lesson__answer-js">3</span>        for (let i = 0; i < array.length; i++) {
+<span class="lesson__answer-js">4</span>            if (array[i] > 10) {
+<span class="lesson__answer-js">5</span>                result += array[i] + ' '   
+<span class="lesson__answer-js">6</span>            }
+<span class="lesson__answer-js">7</span>        }
+<span class="lesson__answer-js">8</span>        return result
+<span class="lesson__answer-js">9</span>    }
+<span class="lesson__answer-js">10</span>
+<span class="lesson__answer-js">11</span>    function arrayOutput(array) {
+<span class="lesson__answer-js">12</span>        let arr = ''
+<span class="lesson__answer-js">13</span>        for (let i = 0; i < array.length; i++) {
+<span class="lesson__answer-js">14</span>            arr += array[i] + ' '
+<span class="lesson__answer-js">15</span>        }
+<span class="lesson__answer-js">16</span>        return arr
+<span class="lesson__answer-js">17</span>    }
+<span class="lesson__answer-js">18</span>        
+<span class="lesson__answer-js">19</span>    const numbers = [5, 10, 13, 8, 19, 27, 3, 9]
+<span class="lesson__answer-js">20</span>        
+<span class="lesson__answer-js">21</span>    console.log('Массив:', arrayOutput(numbers), '\nЧисла массива, которые больше 10:', searchForNumbersGreaterThanTen(numbers))</code></pre>
+                Результат выполнения блока кода можно увидеть в консоли.
+                <a class="button" href="lesson101-2.html">Результат</a>
+            </div>
+
+
+
+            <h2>Вопрос 3</h2>
+            <div class="lesson__answer">
+                Реализация калькулятора. Создание функции, которая принимает три
+                аргумента, два числа и строку для выбора оператора. При вызове функции внутри происходит проверка на
+                знак.
+                Реализованы 4 математические операции: сложение,
+                вычитание, умножение и деление.
+                <pre><code><span class="lesson__answer-js">1</span>    function calc(firstNumber, secondNumber, operator) {
+<span class="lesson__answer-js">2</span>        switch (operator) {
+<span class="lesson__answer-js">3</span>            case 'plus':
+<span class="lesson__answer-js">4</span>                return firstNumber + secondNumber
+<span class="lesson__answer-js">5</span>                break;
+<span class="lesson__answer-js">6</span>            case 'minus':
+<span class="lesson__answer-js">7</span>                return firstNumber - secondNumber
+<span class="lesson__answer-js">8</span>                break;
+<span class="lesson__answer-js">9</span>            case 'multiply':
+<span class="lesson__answer-js">10</span>                return firstNumber * secondNumber
+<span class="lesson__answer-js">11</span>                break;
+<span class="lesson__answer-js">12</span>            case 'divide':
+<span class="lesson__answer-js">13</span>                return firstNumber / secondNumber
+<span class="lesson__answer-js">14</span>                break;
+<span class="lesson__answer-js">15</span>            default:
+<span class="lesson__answer-js">16</span>                return `no such operator :(`
+<span class="lesson__answer-js">17</span>                break;
+<span class="lesson__answer-js">18</span>        }
+<span class="lesson__answer-js">19</span>    }
+<span class="lesson__answer-js">20</span>    console.log(`10 разделить на 5 будет ${calc(10, 5, 'divide')}\n13 отнять 7 будет ${calc(13, 7, 'minus')}\n5 умножить на 48 будет ${calc(5, 48, 'multiply')}\n16 прибавить 35 будет ${calc(16, 35, 'plus')}`)</code></pre>
+                Результат выполнения блока кода можно увидеть в консоли.
+                <a class="button" href="lesson101-3.html">Результат</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

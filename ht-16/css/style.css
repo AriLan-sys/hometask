@@ -1,0 +1,116 @@
+:root {
+    --white: #f0f8ff;
+}
+
+body {
+    padding: 30px;
+    background: #5f6b81;
+    color: var(--white);
+    text-shadow: 1px 1px 2px #000;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+/* ---------------------------------------------------------- */
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    margin: 2rem;
+}
+
+.lesson {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    font-style: italic;
+    padding-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.7rem;
+    margin: 1rem;
+}
+
+/* ---------------------------------------------------------- */
+
+pre {
+    background: #37394b;
+    line-height: 20px;
+    border: 1px solid var(--white);
+    border-left: 4px solid #7693b8;
+    max-width: 100%;
+    overflow: auto;
+    display: block;
+    font-style: normal;
+    padding: 15px;
+    margin: 15px 0;
+    letter-spacing: 3px;
+}
+
+.lesson__answer-js {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    font-style: normal;
+    color: var(--white);
+    text-shadow: 1px 1px 2px #000000;
+}
+
+/* --------------------------------- */
+
+.lesson__list {
+    padding: 15px;
+    font-size: 24px;
+    margin: 50px 0;
+    border-radius: 10px;
+    border: 2px solid #D0DCE7;
+}
+
+.lesson__list-item {
+    margin-bottom: 15px;
+    gap: 18px;
+    text-align: center;
+    transition: all .5s;
+}
+
+.lesson__list-item:hover {
+    color: #7693b8;
+    font-size: 1.7rem;
+}
+
+/* ---------------------------------------------------- */
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: calc(20px / 16px);
+    color: #37394b;
+    background: #d0dce7;
+    height: 56px;
+    width: 100%;
+    max-width: 288px;
+    border-radius: 100px;
+    transition: all .5s;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px #96969a;
+    font-style: normal;
+    margin-top: 15px;
+}
+
+.button:hover {
+    color: var(--white);
+    background: #37394b;
+    text-shadow: 1px 1px 2px #000000;
+}

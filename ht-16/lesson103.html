@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Task №16 | lesson 103</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="conteiner">
+        <h1>Ответы на вопросы к уроку 103</h1>
+        <a class="button" href="../index.html">МЕНЮ</a>
+        <div class="lesson">
+
+            <div class="lesson__answer">
+                Создание объекта с моим описанием(имя, возраст и фамилия).
+                Создание метода объекта, который в качестве аргумента принимает имя и возвращает строку ‘Hello
+                “переданный аргумент”’.
+                Создание массива объектов с описанием пользователей. Объявление отдельной
+                переменной, в которой хранится количество простых пользователей, начальное значение - 0.
+                Обход массива пользователей и если пользователь не является админом - добавление к ранее созданной
+                переменной единицу. После окончания работы цикла выводится в консоль переменная с количеством простых
+                пользователей.
+                <pre><code><span class="lesson__answer-js">1</span>    const user = {
+<span class="lesson__answer-js">2</span>        name: 'Ariadna',
+<span class="lesson__answer-js">3</span>        age: 18,
+<span class="lesson__answer-js">4</span>        lastName: 'Lantsova',
+<span class="lesson__answer-js">5</span>        sayHello(name) {
+<span class="lesson__answer-js">6</span>            return `Hello ${name}`
+<span class="lesson__answer-js">7</span>        }
+<span class="lesson__answer-js">8</span>    }
+<span class="lesson__answer-js">9</span>    
+<span class="lesson__answer-js">10</span>    let noAdmins = 0
+<span class="lesson__answer-js">11</span>    
+<span class="lesson__answer-js">12</span>    const users = [
+<span class="lesson__answer-js">13</span>        {
+<span class="lesson__answer-js">14</span>            name: 'Kirill',
+<span class="lesson__answer-js">15</span>            age: 22,
+<span class="lesson__answer-js">16</span>            admin: true
+<span class="lesson__answer-js">17</span>        },
+<span class="lesson__answer-js">18</span>        {
+<span class="lesson__answer-js">19</span>            name: 'Lana',
+<span class="lesson__answer-js">20</span>            age: 19,
+<span class="lesson__answer-js">21</span>            admin: false
+<span class="lesson__answer-js">22</span>        },
+<span class="lesson__answer-js">23</span>        {
+<span class="lesson__answer-js">24</span>            name: 'Denis',
+<span class="lesson__answer-js">25</span>            age: 20,
+<span class="lesson__answer-js">26</span>            admin: false
+<span class="lesson__answer-js">27</span>        }
+<span class="lesson__answer-js">28</span>    ]
+<span class="lesson__answer-js">29</span>    
+<span class="lesson__answer-js">30</span>    for (let i = 0; i < users.length; i++) {
+<span class="lesson__answer-js">31</span>        if (users[i].admin === false) { noAdmins++ }
+<span class="lesson__answer-js">32</span>    }
+<span class="lesson__answer-js">33</span>    
+<span class="lesson__answer-js">34</span>    console.log(noAdmins)</code></pre>
+                Результат выполнения блока кода можно увидеть в консоли.
+            </div>
+
+        </div>
+    </div>
+    <script src="js/lesson103.js"></script>
+</body>
+
+</html>
