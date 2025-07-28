@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Task №17 | lesson 105, 108, 112</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="cat">
+            <img src="image/cat.jpg" alt="котенок">
+        </div>
+
+        <div class="main">
+            <div class="main__title">
+                <h1>домашнее задание 17</h1>
+            </div>
+            <div class="main__text">
+                Работа по уроку 105. <a href="lesson105.html"><u>Нажми, чтобы посмотреть консоль</u></a>
+            </div>
+            <div class="main__code">
+                <pre><code><span class="main__code-js">1</span>    const users = [
+<span class="main__code-js">2</span>        {
+<span class="main__code-js">3</span>            name: 'max',
+<span class="main__code-js">4</span>            age: 23
+<span class="main__code-js">5</span>        },
+<span class="main__code-js">6</span>        {
+<span class="main__code-js">7</span>            name: 'ivan',
+<span class="main__code-js">8</span>            age: 25
+<span class="main__code-js">9</span>        },
+<span class="main__code-js">10</span>       {
+<span class="main__code-js">11</span>           name: 'robert',
+<span class="main__code-js">12</span>           age: 12
+<span class="main__code-js">13</span>       }
+<span class="main__code-js">14</span>   ]
+<span class="main__code-js">15</span>
+<span class="main__code-js">16</span>   users.forEach((user) => {
+<span class="main__code-js">17</span>       console.log(user)
+<span class="main__code-js">18</span>   })
+<span class="main__code-js">19</span> 
+<span class="main__code-js">20</span>   const usersName = []
+<span class="main__code-js">21</span>
+<span class="main__code-js">22</span>   users.forEach((user) => {
+<span class="main__code-js">23</span>       usersName.push(user.name)
+<span class="main__code-js">24</span>   })
+<span class="main__code-js">25</span>
+<span class="main__code-js">26</span>   console.log(usersName)</code></pre>
+            </div>
+            <div class="main__text">
+                Работа по уроку 108. <a href="lesson108.html"><u>Нажми, чтобы посмотреть консоль</u></a>
+            </div>
+            <div class="main__code">
+                <pre><code><span class="main__code-js">1</span>    const button = document.querySelector('.btn-1')
+<span class="main__code-js">2</span>    let btnIsBlue = false
+<span class="main__code-js">3</span>    let btnIsPurple = false
+<span class="main__code-js">4</span>    let btnIsGreen = false
+<span class="main__code-js">5</span>    
+<span class="main__code-js">6</span>    button.addEventListener('click', () => {
+<span class="main__code-js">7</span>        if (btnIsBlue) {
+<span class="main__code-js">8</span>            button.style.backgroundColor = '#c53ce757'
+<span class="main__code-js">9</span>            button.textContent = 'Я фиолетовая! Нажми еще раз'
+<span class="main__code-js">10</span>           button.style.height = '100px'
+<span class="main__code-js">11</span>           button.style.maxWidth = '450px'
+<span class="main__code-js">12</span>           btnIsPurple = true
+<span class="main__code-js">13</span>           btnIsBlue = false
+<span class="main__code-js">14</span>       }
+<span class="main__code-js">15</span>       else if (btnIsPurple) {
+<span class="main__code-js">16</span>           button.style.backgroundColor = '#23d5ab63'
+<span class="main__code-js">17</span>           button.textContent = 'Теперь я зеленая! Нажми еще раз'
+<span class="main__code-js">18</span>           button.style.height = '75px'
+<span class="main__code-js">19</span>           button.style.maxWidth = '500px'
+<span class="main__code-js">20</span>           btnIsPurple = false
+<span class="main__code-js">21</span>           btnIsGreen = true
+<span class="main__code-js">22</span>       }
+<span class="main__code-js">23</span>       else if (btnIsGreen) {
+<span class="main__code-js">24</span>           button.style.backgroundColor = '#eeeb5259'
+<span class="main__code-js">25</span>           button.textContent = 'Я желтая! Нажми еще раз'
+<span class="main__code-js">26</span>           button.style.height = '100px'
+<span class="main__code-js">27</span>           button.style.maxWidth = '450px'
+<span class="main__code-js">28</span>           btnIsGreen = false
+<span class="main__code-js">29</span>       } else {
+<span class="main__code-js">30</span>           button.style.backgroundColor = '#23a5d556'
+<span class="main__code-js">31</span>           button.textContent = 'Теперь я голубая! Нажми еще раз'
+<span class="main__code-js">32</span>           button.style.height = '75px'
+<span class="main__code-js">33</span>           button.style.maxWidth = '500px'
+<span class="main__code-js">34</span>           btnIsBlue = true
+<span class="main__code-js">35</span>       }
+<span class="main__code-js">36</span>   })</code></pre>
+            </div>
+            <div class="main__text">
+                Работа по уроку 112. <a href="lesson112.html"><u>Нажми, чтобы посмотреть консоль</u></a>
+            </div>
+            <div class="main__code">
+                <pre><code><span class="main__code-js">1</span>    const modalOpen = document.querySelector('.button-modal')
+<span class="main__code-js">2</span>    const modalClose = document.querySelector('.modal__close-btn')
+<span class="main__code-js">3</span>    const modal = document.querySelector('.modal')
+<span class="main__code-js">4</span>    const modalWindow = document.querySelector('.modal__window')
+<span class="main__code-js">5</span>    
+<span class="main__code-js">6</span>    modalOpen.addEventListener('click', () => {
+<span class="main__code-js">7</span>        modalClose.classList.toggle('close-btn')
+<span class="main__code-js">8</span>        modal.classList.toggle('close-m')
+<span class="main__code-js">9</span>        modalWindow.classList.toggle('close-mw')
+<span class="main__code-js">10</span>    })
+<span class="main__code-js">11</span>   
+<span class="main__code-js">12</span>   modalClose.addEventListener('click', () => {
+<span class="main__code-js">13</span>       modalClose.classList.toggle('close-btn')
+<span class="main__code-js">14</span>       modal.classList.toggle('close-m')
+<span class="main__code-js">15</span>       modalWindow.classList.toggle('close-mw')
+<span class="main__code-js">16</span>   })</code></pre>
+            </div>
+        </div>
+    </div>
+    <footer class="footer"></footer>
+    <!-- <script src="js/lesson.js"></script> -->
+</body>
+
+</html>
