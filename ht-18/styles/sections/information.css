@@ -1,0 +1,476 @@
+/* -------------------------------MAIN INFORMATION---------------------------------- */
+
+.information {
+    margin: 140px 0 30px;
+}
+
+.information__inner {
+    display: flex;
+    gap: 54px;
+}
+
+/* ----------------------------------------------------------------- */
+
+.information__img {
+    position: relative;
+    display: inline-block;
+}
+
+.information__img-girl {
+    border-radius: 20px;
+    max-width: 603px;
+}
+
+
+.information__img-control::before {
+    content: '';
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    width: 78px;
+    height: 78px;
+    background: var(--bg-light-color);
+    border-radius: 50%;
+}
+
+.information__img-control::after {
+    content: '';
+    position: absolute;
+    bottom: 45px;
+    left: 55px;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    border: 2px solid var(--accent2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s;
+}
+
+.information__img-control:hover::after {
+    opacity: 1;
+}
+
+.information__img::before {
+    content: '';
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    width: 299px;
+    height: 108px;
+    border-radius: 20px;
+    background: #957b97e6;
+}
+
+.information__img-button {
+    position: absolute;
+    bottom: 42.5px;
+    left: 52px;
+    width: 24px;
+    padding: 20px;
+    transition: all .4s;
+    pointer-events: none;
+}
+
+.information__img-text {
+    content: '';
+    position: absolute;
+    color: var(--bg-light-color);
+    bottom: 43px;
+    left: 138px;
+    max-width: 171px;
+}
+
+/* ----------------------------------------------------------------- */
+
+.information__modal,
+.modal__window {
+    z-index: -10;
+    transition: all .4s;
+
+    opacity: 0;
+}
+
+.information__modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #312c27af;
+}
+
+.modal__window {
+    position: relative;
+    width: 428px;
+    height: 492px;
+    padding: 133px 60px 60px;
+    border-radius: 20px;
+    background: var(--bg-light-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.modal__close svg path,
+.modal__close svg rect {
+    transition: all .4s;
+}
+
+.modal__close:hover svg path,
+.modal__close:hover svg rect {
+    stroke: var(--accent);
+}
+
+.modal__img {
+    position: absolute;
+    top: -65px;
+    left: 72px;
+}
+
+.modal__title {
+    max-width: 308px;
+    font-size: 42px;
+    line-height: 1;
+}
+
+.modal__text {
+    max-width: 282px;
+    padding: 10px 0 30px;
+}
+
+.modal__form {
+    width: 308px;
+    height: 62px;
+    border-radius: 100px;
+    padding: 19px 41px 19px 28px;
+    border: 1px solid var(--input-color);
+    margin-bottom: 10px;
+    transition: all .4s;
+    display: flex;
+    align-items: center;
+}
+
+#modal__input {
+    flex: 1;
+}
+
+#modal__input,
+#modal__input::placeholder {
+    color: var(--input-color);
+    font-size: 16px;
+    transition: all .4s;
+}
+
+.modal__form:hover,
+.modal__form:focus-within {
+    border-color: var(--accent);
+}
+
+.modal__form:hover #modal__input,
+.modal__form:hover #modal__input::placeholder,
+#modal__input:focus,
+#modal__input:focus::placeholder {
+    color: var(--accent);
+}
+
+.modal__button {
+    width: 308px;
+    height: 62px;
+}
+
+.body--opened-modal .information__modal,
+.body--opened-modal .modal__window {
+    opacity: 1;
+    z-index: 12;
+}
+
+.body--opened-modal {
+    overflow: hidden;
+}
+
+
+.input__group {
+    position: relative;
+}
+
+#modal__input {
+    width: 100%;
+    font-size: 15px;
+    border-radius: 6px;
+    outline: none;
+    background: none;
+}
+
+#modal__input::placeholder {
+    color: transparent;
+}
+
+.input__group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--input-color);
+    font-size: 11px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+#modal__input:not(:placeholder-shown)+label {
+    opacity: 1;
+    transform: translateY(-12px);
+}
+
+/* ----------------------------------------------------------------- */
+
+.information__title {
+    font-size: 74px;
+    line-height: 61px;
+}
+
+.information__text {
+    padding-bottom: 30px;
+}
+
+.information__list {
+    margin-top: 10px;
+    display: grid;
+    grid-template: repeat(2, 1fr) / 1fr 1fr;
+    gap: 32px 32px;
+}
+
+.information__item {
+    background: var(--bg-color);
+    border-radius: 20px;
+    padding: 29px 23.5px;
+    width: 296px;
+    height: 130px;
+    display: flex;
+    position: relative;
+}
+
+.information__item-hat {
+    position: absolute;
+    max-width: 24px;
+    top: 53px;
+    left: 42.5px;
+}
+
+.information__item::before {
+    content: '';
+    position: absolute;
+    left: 24.5px;
+    bottom: 35px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid var(--typesetting);
+}
+
+.information__item p {
+    margin: auto 0 auto calc(99.5px - 23.5px);
+    max-width: 173px;
+}
+
+/* ----------------------------------------------------------------- */
+
+@media (max-width: 1400px) {
+    .information__inner {
+        flex-direction: column;
+    }
+
+    .information__img,
+    .information__item {
+        margin: auto;
+    }
+
+    .information__title,
+    .information__text,
+    .information__advantages {
+        margin: 0 3vw;
+    }
+
+    .information__item {
+        width: 30vw;
+        min-width: 296px;
+    }
+
+    .information__item p {
+        min-width: 173px;
+        max-width: 23vw;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .information__img-girl {
+        border-radius: 4%;
+        max-width: 70vw;
+    }
+
+    .information__img-control::before {
+        bottom: 40px;
+        left: 50px;
+        width: 58px;
+        height: 58px;
+    }
+
+    .information__img-control::after {
+        bottom: 45px;
+        left: 55px;
+        width: 48px;
+        height: 48px;
+    }
+
+    .information__img::before {
+        bottom: 25px;
+        left: 30px;
+        width: 250px;
+        height: 88px;
+    }
+
+    .information__img-button {
+        bottom: 36px;
+        left: 46px;
+    }
+
+    .information__img-button img {
+        max-width: 26px;
+    }
+
+    .information__img-text {
+        font-size: 12px;
+        left: 125px;
+        max-width: 140px;
+    }
+
+    /* ------------------------ */
+
+    .information__title {
+        font-size: 52px;
+    }
+
+
+    .information__list {
+        grid-template: repeat(4, 1fr) / 1fr;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .information__item {
+        width: 80vw;
+        min-width: 0;
+        height: 100px;
+    }
+
+    .information__item p {
+        min-width: 0;
+        max-width: 90vw;
+    }
+
+    .information__img-girl {
+        height: 20px;
+        width: 80vw;
+        opacity: 0;
+    }
+
+    .information__img-control::before {
+        bottom: 40px;
+        left: 20px;
+        width: 58px;
+        height: 58px;
+    }
+
+    .information__img-control::after {
+        bottom: 45px;
+        left: 25px;
+        width: 48px;
+        height: 48px;
+    }
+
+    .information__img::before {
+        bottom: 25px;
+        left: 0px;
+        width: 70vw;
+        height: 88px;
+    }
+
+    .information__img-button {
+        bottom: 36px;
+        left: 16px;
+    }
+
+    .information__img-button img {
+        max-width: 26px;
+    }
+
+    .information__img-text {
+        bottom: 50px;
+        left: 95px;
+        max-width: 45vw;
+    }
+
+    .information__title {
+        margin-top: -50px;
+        font-size: 52px;
+    }
+
+    .information__item-hat {
+        max-width: 21px;
+        top: 40px;
+        left: 39px;
+    }
+
+    .information__item::before {
+        bottom: 25px;
+        width: 50px;
+        height: 50px;
+    }
+
+    /* ------------------------------------- */
+
+    .modal__window {
+        width: 328px;
+        height: 392px;
+        padding: 93px 30px 30px;
+    }
+
+    .modal__img {
+        top: -75px;
+        left: 47px;
+    }
+
+    .modal__img img {
+        max-width: 220px;
+    }
+
+    .modal__title {
+        font-size: 32px;
+    }
+
+    .modal__form {
+        width: 265px;
+        height: 42px;
+        padding: 11px 21px 11px 18px;
+    }
+
+    #modal__form,
+    #modal__form::placeholder {
+        font-size: 12px;
+    }
+
+    .modal__button {
+        width: 265px;
+        height: 42px;
+    }
+
+
+}
