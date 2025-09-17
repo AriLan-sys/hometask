@@ -207,10 +207,6 @@
     background: none;
 }
 
-#modal__input::placeholder {
-    color: transparent;
-}
-
 .input__group label {
     position: absolute;
     top: 0;
@@ -471,6 +467,7 @@
         width: 265px;
         height: 42px;
     }
+
 
 
 }
